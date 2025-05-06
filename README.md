@@ -20,7 +20,9 @@ Neither approach is elegant—both waste either time or time & storage space. So
 
 # Timeline
 
-I'll test it myself. When ready (stable) I'll maybe upload it to GreasyFork. First time doing this, all comments suggestions and critics are welcome! 
+I'll test it myself. When ready (stable), I'll maybe upload it to GreasyFork. 
+First time doing this, all comments, suggestions, and criticisms are welcome! 
+Star the project if you're into it! :)
 
 ## How It Works
 
