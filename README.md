@@ -18,6 +18,10 @@ Neither approach is elegant—both waste either time or time & storage space. So
 *   **Lightweight:** Requires no special browser permissions (`@grant none`).
 *   **Console Logging:** Provides feedback in the browser console regarding its operations and successful installation.
 
+# Timeline
+
+I'll test it myself. When ready (stable) I'll maybe upload it to GreasyFork. First time doing this, all comments suggestions and critics are welcome! 
+
 ## How It Works
 
 This is a UserScript, intended to be used with a browser extension like Tampermonkey or Greasemonkey.
