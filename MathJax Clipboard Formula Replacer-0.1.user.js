@@ -20,14 +20,14 @@
     e.preventDefault();
 
     const sel = document.getSelection();
-    if (!sel || sel.rangeCount === 0) return;
-    const range = sel.getRangeAt(0);
-    const frag = range.cloneContents();
-    const container = document.createElement('div');
-    container.appendChild(frag);
+    if (!sel || sel.rangeCount === 0) return; // No selection, no need to proceed
+    const range = sel.getRangeAt(0);  // Get the first (and only) range in the selection
+    const frag = range.cloneContents(); // Clone the contents of the range
+    const container = document.createElement('div'); // Create a new div element
+    container.appendChild(frag); // Append the cloned contents to the div
 
-    const plain = sel.toString();
-    const htmlFrag = container.innerHTML;
+    const plain = sel.toString(); // Get the plain text of the selection
+    const htmlFrag = container.innerHTML; // Get the HTML of the cloned contents
 
     // Quick check: do we actually have MathJax here?
     if (!/mjx-container|class="MathJax"/.test(htmlFrag)) {

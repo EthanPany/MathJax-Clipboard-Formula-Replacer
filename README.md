@@ -1,7 +1,9 @@
 # MathJax-Clipboard-Formula-Replacer
 
 Replace complex MathJax HTML with its underlying TeX formula in your clipboard, making it easy to paste into LaTeX, Markdown, and other TeX-aware applications. If no MathJax is detected, the original selection is copied.
-![image-20250506173341455](https://p.ipic.vip/km1q81.png)
+
+## Demo (Click to watch)
+[![image-20250506173341455](https://p.ipic.vip/km1q81.png)](https://youtu.be/uIwWMj-_4HU)
 ## Why I Wrote This
 
 My intro to AI class uses webpages as slides, and so do the homework questions for my ECE class (on Canvas). One problem with this setup is that whenever I copy something containing a formula and paste it into tools like ChatGPT, the formula disappears. Personally, I use Typora to convert the content into Markdown before pasting it into ChatGPT, while some of my classmates just take tons of screenshots. 
@@ -18,7 +20,9 @@ Neither approach is elegant—both waste either time or time & storage space. So
 *   **Lightweight:** Requires no special browser permissions (`@grant none`).
 *   **Console Logging:** Provides feedback in the browser console regarding its operations and successful installation.
 
-# Timeline
+
+
+## Timeline
 
 I'll test it myself. When ready (stable), I'll maybe upload it to GreasyFork. 
 First time doing this, all comments, suggestions, and criticisms are welcome! 
