@@ -1,4 +1,4 @@
-# 📋✨ MathJax-Clipboard-Formula-Replacer
+# 📋✨ MathJax Clipboard Formula Replacer (MathJax公式文本替换器)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Replace complex MathJax HTML with its underlying TeX formula in your clipboard, making it easy to paste into LaTeX, Markdown, and other TeX-aware applications. If no MathJax is detected, the original selection is copied.
