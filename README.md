@@ -1,14 +1,11 @@
 # 📋✨ MathJax-Clipboard-Formula-Replacer
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Replace complex MathJax HTML with its underlying TeX formula in your clipboard, making it easy to paste into LaTeX, Markdown, and other TeX-aware applications. If no MathJax is detected, the original selection is copied.
 
-## Demo
+## 🚀 Demo
 [![demo-image](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmszeHM5eHR2eWVxMWFtOTVueHFxcGdsMjRiNGN2eWY1eDQ0cnN2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tzQgiwWzNa6gOPp1FI/giphy.gif)](https://youtu.be/uIwWMj-_4HU)
 
-## Why I Wrote This
-My intro to AI class uses webpages as slides, and so do the homework questions for my ECE class (on Canvas). One problem with this setup is that whenever I copy something containing a formula and paste it into tools like ChatGPT, the formula disappears. Personally, I use Typora to convert the content into Markdown before pasting it into ChatGPT, while some of my classmates just take tons of screenshots. 
-## 🚀 Demo
-[![image-20250506173341455](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHJnc2ZpYm9pMTkwN3V3dzBrcnF5cG9sanpjdm50bWp5NHR4NzJraCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YbWRYySHR92dDJJAtS/giphy.gif)](https://youtu.be/uIwWMj-_4HU)
 ## 🤔 Why I Wrote This
 
 My intro to AI class uses webpages as slides, and so do the homework questions for my ECE class (on Canvas). One problem with this setup is that whenever I copy something containing a formula and paste it into tools like ChatGPT, the formula disappears. Personally, I use Typora to convert the content into Markdown before pasting it into ChatGPT, while some of my classmates just take tons of screenshots.
