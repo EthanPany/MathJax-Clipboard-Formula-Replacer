@@ -1,7 +1,7 @@
 # 📋✨ MathJax Clipboard Formula Replacer (MathJax公式文本替换器)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-Replace complex MathJax HTML with its underlying TeX formula in your clipboard, making it easy to paste into LaTeX, Markdown, and other TeX-aware applications. If no MathJax is detected, the original selection is copied.
+Replace complex MathJax HTML with its underlying TeX formula in your clipboard, making it easy to paste into LLM tools like ChatGPT, Markdown, and other TeX-aware applications. If no MathJax is detected, the original selection is copied.
 
 ## 🚀 Demo
 [![demo-image](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmszeHM5eHR2eWVxMWFtOTVueHFxcGdsMjRiNGN2eWY1eDQ0cnN2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tzQgiwWzNa6gOPp1FI/giphy.gif)](https://youtu.be/uIwWMj-_4HU)
