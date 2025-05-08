@@ -1,16 +1,16 @@
-# MathJax-Clipboard-Formula-Replacer
+# 📋✨ MathJax-Clipboard-Formula-Replacer
 
 Replace complex MathJax HTML with its underlying TeX formula in your clipboard, making it easy to paste into LaTeX, Markdown, and other TeX-aware applications. If no MathJax is detected, the original selection is copied.
 
-## Demo
+## 🚀 Demo
 [![image-20250506173341455](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHJnc2ZpYm9pMTkwN3V3dzBrcnF5cG9sanpjdm50bWp5NHR4NzJraCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YbWRYySHR92dDJJAtS/giphy.gif)](https://youtu.be/uIwWMj-_4HU)
-## Why I Wrote This
+## 🤔 Why I Wrote This
 
-My intro to AI class uses webpages as slides, and so do the homework questions for my ECE class (on Canvas). One problem with this setup is that whenever I copy something containing a formula and paste it into tools like ChatGPT, the formula disappears. Personally, I use Typora to convert the content into Markdown before pasting it into ChatGPT, while some of my classmates just take tons of screenshots. 
+My intro to AI class uses webpages as slides, and so do the homework questions for my ECE class (on Canvas). One problem with this setup is that whenever I copy something containing a formula and paste it into tools like ChatGPT, the formula disappears. Personally, I use Typora to convert the content into Markdown before pasting it into ChatGPT, while some of my classmates just take tons of screenshots.
 
-Neither approach is elegant—both waste either time or time & storage space. So I learned scripting from scratch and implemented this with help from ChatGPT.
+Neither approach is elegant—both waste either time or time & storage space. So I learned scripting from scratch and implemented this with help from ChatGPT. I hope this script can help others facing similar issues!
 
-## Features
+## ✨ Features
 
 *   **Automatic MathJax Detection:** Identifies MathJax content within your copied selection.
 *   **TeX Extraction:** Accurately extracts TeX formulas from both MathJax v2 and MathJax v3.
@@ -20,15 +20,34 @@ Neither approach is elegant—both waste either time or time & storage space. So
 *   **Lightweight:** Requires no special browser permissions (`@grant none`).
 *   **Console Logging:** Provides feedback in the browser console regarding its operations and successful installation.
 
+## 🛠️ How to Use
 
+This script is a UserScript and requires a browser extension like Tampermonkey (for Chrome, Firefox, Edge, Opera) or Greasemonkey (for Firefox) to manage and run it.
 
-## Timeline
+1.  **Install a UserScript Manager:**
+    *   **Tampermonkey:** Visit the [Tampermonkey website](https://www.tampermonkey.net/) and install the extension for your browser.
+    *   **Greasemonkey:** If you use Firefox, you can get it from the [Firefox Add-ons page](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/).
 
-I'll test it myself. When ready (stable), I'll maybe upload it to GreasyFork. 
-First time doing this, all comments, suggestions, and criticisms are welcome! 
-Star the project if you're into it! :)
+2.  **Install the Script:**
+    *   Navigate to the `MathJax Clipboard Formula Replacer.user.js` file in this repository.
+    *   Click the "Raw" button to view the script's source code.
+    *   If you have Tampermonkey/Greasemonkey installed, it should automatically detect the UserScript and prompt you to install it. Confirm the installation.
+    *   Alternatively, you can:
+        1.  Copy the entire content of `MathJax Clipboard Formula Replacer.user.js`.
+        2.  Open your UserScript manager's dashboard (e.g., Tampermonkey).
+        3.  Create a new script.
+        4.  Paste the copied code into the editor, replacing any template code.
+        5.  Save the script.
 
-## How It Works
+3.  **Usage:**
+    *   Once installed, the script runs automatically on all web pages (`*://*/*`) after the document is idle (`@run-at document-idle`).
+    *   Simply select and copy text from any webpage as you normally would (e.g., using `Ctrl+C` or `Cmd+C`).
+    *   **If MathJax formulas are detected:** They will be automatically converted to their TeX representation in your clipboard.
+    *   **If no MathJax is detected:** Your original selection will be copied as-is.
+    *   You can then paste the content into LaTeX editors, Markdown files (like Obsidian, Typora), or any other application that understands TeX.
+    *   Check your browser's developer console for logs from the script, which can confirm its actions or indicate any issues.
+
+## ⚙️ How It Works
 
 This is a UserScript, intended to be used with a browser extension like Tampermonkey or Greasemonkey.
 
@@ -49,7 +68,7 @@ This is a UserScript, intended to be used with a browser extension like Tampermo
         *   **Error Handling:** If any part of this parsing and replacement process fails, the script catches the error, logs a warning, and falls back to using the original plain text and HTML.
 5.  **Console Feedback:** The script logs its actions, including the original and cleaned plain/HTML content when MathJax is processed, or indicates a fallback. It also logs a success message upon initial installation.
 
-## UserScript Header Details
+## 📜 UserScript Header Details
 
 The script includes standard Tampermonkey metadata:
 
@@ -60,7 +79,7 @@ The script includes standard Tampermonkey metadata:
 // @name:zh      MathJax 剪切板公式文本替换器
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Intercept copy, but only parse & extract TeX when MathJax is present; otherwise, pass through the original selection untouched.
+// @description  Intercepts copy events. If MathJax content is detected in the selection, it extracts the TeX formula and cleans associated HTML. Otherwise, the original selection is copied.
 // @author       Ethan Pan
 // @match        *://*/*
 // @grant        none
@@ -69,10 +88,27 @@ The script includes standard Tampermonkey metadata:
 ```
 This metadata tells your UserScript manager:
 *   The name of the script (including English and Chinese localizations).
-*   A unique namespace.
+*   A unique namespace (often the author's homepage or a project URL).
 *   The current version.
 *   A brief description of what it does.
 *   The author.
-*   Which pages it should run on (all pages).
-*   That it requires no special Greasemonkey API functions.
-*   That it should run after the page has loaded (`document-idle`).
+*   Which pages it should run on (`*://*/*` means all pages).
+*   That it requires no special Greasemonkey API functions (`@grant none`).
+*   That it should run after the page has fully loaded and parsed (`document-idle`).
+
+## 🗓️ Timeline & Contributing
+
+I'll test it myself. When ready (stable), I'll maybe upload it to GreasyFork.
+This is my first time creating a UserScript, so all comments, suggestions, and criticisms are welcome!
+If you find this project useful, please consider starring it! ⭐
+
+If you'd like to contribute:
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/your-feature-name`).
+3.  Make your changes.
+4.  Commit your changes (`git commit -m 'Add some feature'`).
+5.  Push to the branch (`git push origin feature/your-feature-name`).
+6.  Open a Pull Request.
+
+## License
+This project is licensed under the GNU General Public License v3 - see the [LICENSE](LICENSE) file for details.
